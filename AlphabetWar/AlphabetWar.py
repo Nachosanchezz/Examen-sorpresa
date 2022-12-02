@@ -15,10 +15,5 @@ def alphabet_war(fight):
     else:
         return "Let's fight again!"
 
-print(alphabet_war("z"))
-print(alphabet_war("zdqmwpbs"))
-print(alphabet_war("zzzzs"))
-print(alphabet_war("wwwwwwz"))
-
     
 
