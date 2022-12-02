@@ -9,3 +9,17 @@ def sudoku(board):
                 return board
             board[x][y] = 0
 
+def valid(x,y,n,board):
+    for i in range(9):
+        if board[x][i] == n or board[i][y] == n:
+            return False
+
+    new_x = x//3 * 3
+    new_y = y//3 * 3
+    for i in range(3):
+        for j in range(3):
+            if board[new_x + i][new_y + j] == n:
+                return False
+
+    return True
+
