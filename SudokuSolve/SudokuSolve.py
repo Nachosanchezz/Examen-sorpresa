@@ -30,4 +30,4 @@ def find_empty_cell(board):
                 return (i,j)
 
     return (-1,-1)
-
+    
